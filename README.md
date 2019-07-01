@@ -1,8 +1,17 @@
-# Trace-Dataset
+# Trace-Share: Dataset
 
-Example of network traffic traces provided as annotated units
+Example of network traffic traces provided as annotated units.
 
 _(This repository will be archived after Trace-Share web platform introduction.)_
+
+### Table of Contents
+
+* [Description](#description)
+* [Traces](#traces)
+   + [SSH-Hydra](#ssh-hydra)
+   + [SSH-Medusa](#ssh-medusa)
+   + [SSH-Ncrack](#ssh-ncrack)
+* [Contribution](#contribution)
 
 
 ## Description
@@ -12,8 +21,9 @@ Annotated units of SSH dictionary attack performed by `medusa`, `hydra` and `ncr
 
 ## Traces
 
-### Hydra 8.4
+### SSH-Hydra
 
+Version: 8.4
 Webpage: https://www.thc.org/thc-hydra/
 
 - hydra-1_tasks.pcap
@@ -38,8 +48,9 @@ Webpage: https://www.thc.org/thc-hydra/
     - _defender:_ 240.125.0.2 
     
 
-### Medusa 2.2  
+### SSH-Medusa 
 
+Version: 2.2
 Webpage: http://foofus.net/goons/jmk/medusa/medusa.html  
 
 - medusa-1_tasks.pcap
@@ -64,8 +75,9 @@ Webpage: http://foofus.net/goons/jmk/medusa/medusa.html
     - _defender:_ 240.125.0.2         
 
             
-### Ncrack 0.5
+### SSH-Ncrack
 
+Version: 0.5
 Webpage: https://nmap.org/ncrack/ 
             
 - ncrack-paranoid.pcap
@@ -88,3 +100,10 @@ Webpage: https://nmap.org/ncrack/
     - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T aggressive`
     - _attacker:_ 240.0.3.6
     - _defender:_ 240.125.0.2   
+
+
+## Contribution
+
+New datasets are welcome! The sharing platform is not working yet, but we can already create and share new network traffic traces.
+
+*If you are interested in research collaborations, don't hesitate to contact us at  [https://csirt.muni.cz](https://csirt.muni.cz/about-us/contact?lang=en)!*
