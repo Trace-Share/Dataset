@@ -2,7 +2,7 @@
 
 Example of network traffic traces provided as annotated units.
 
-_(This repository will be archived after Trace-Share web platform introduction.)_
+_(This repository will be archived after launch of the sharing platform.)_
 
 ### Table of Contents
 
@@ -104,6 +104,6 @@ Webpage: https://nmap.org/ncrack/
 
 ## Contribution
 
-New datasets are welcome! The sharing platform is not working yet, but we can already create and share new network traffic traces.
+New datasets are welcome! The sharing platform is not working yet, but we can already create and share network traffic traces.
 
 *If you are interested in research collaborations, don't hesitate to contact us at  [https://csirt.muni.cz](https://csirt.muni.cz/about-us/contact?lang=en)!*
