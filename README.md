@@ -1,19 +1,21 @@
-# Datasets
+# Trace-Dataset
 
-Examples of network traffic traces created by Trace-Creator
+Example of network traffic traces provided as annotated units
 
-(This repository will be archived after Trace-Share web platform introduction.)
+_(This repository will be archived after Trace-Share web platform introduction.)_
 
 
-## SSH Dictionary Attacks
+## Description
 
 Annotated units of SSH dictionary attack performed by `medusa`, `hydra` and `ncrack` tools.
+
+
+## Traces
 
 ### Hydra 8.4
 
 Webpage: https://www.thc.org/thc-hydra/
 
-**Annotated units:**
 - hydra-1_tasks.pcap
     - _command:_ `$ ./hydra -l user -x "1:5:a" -t 1 ssh://10.0.0.3/`
     - _attacker:_ 240.0.1.2
@@ -40,7 +42,6 @@ Webpage: https://www.thc.org/thc-hydra/
 
 Webpage: http://foofus.net/goons/jmk/medusa/medusa.html  
 
-**Annotated units:**
 - medusa-1_tasks.pcap
     - _command:_ `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 1`
     - _attacker:_ 240.0.2.2
@@ -67,7 +68,6 @@ Webpage: http://foofus.net/goons/jmk/medusa/medusa.html
 
 Webpage: https://nmap.org/ncrack/ 
             
-**Annotated units:**
 - ncrack-paranoid.pcap
     - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T paranoid`
     - _attacker:_ 240.0.3.2
