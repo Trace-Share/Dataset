@@ -2,7 +2,7 @@
 
 Example of network traffic traces provided as annotated units.
 
-_(This repository will be archived after launch of the sharing platform.)_
+_(This repository will be archived after the launch of the sharing platform.)_
 
 ### Table of Contents
 
