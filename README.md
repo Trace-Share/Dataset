@@ -1,19 +1,31 @@
-# Datasets
+# Trace-Share: Dataset
 
-Examples of network traffic traces created by Trace-Creator
+Example of network traffic traces provided as annotated units.
 
-(This repository will be archived after Trace-Share web platform introduction.)
+_(This repository will be archived after the launch of the sharing platform.)_
+
+### Table of Contents
+
+* [Description](#description)
+* [Traces](#traces)
+   + [SSH-Hydra](#ssh-hydra)
+   + [SSH-Medusa](#ssh-medusa)
+   + [SSH-Ncrack](#ssh-ncrack)
+* [Contribution](#contribution)
 
 
-## SSH Dictionary Attacks
+## Description
 
 Annotated units of SSH dictionary attack performed by `medusa`, `hydra` and `ncrack` tools.
 
-### Hydra 8.4
 
+## Traces
+
+### SSH-Hydra
+
+Version: 8.4
 Webpage: https://www.thc.org/thc-hydra/
 
-**Annotated units:**
 - hydra-1_tasks.pcap
     - _command:_ `$ ./hydra -l user -x "1:5:a" -t 1 ssh://10.0.0.3/`
     - _attacker:_ 240.0.1.2
@@ -36,11 +48,11 @@ Webpage: https://www.thc.org/thc-hydra/
     - _defender:_ 240.125.0.2 
     
 
-### Medusa 2.2  
+### SSH-Medusa 
 
+Version: 2.2
 Webpage: http://foofus.net/goons/jmk/medusa/medusa.html  
 
-**Annotated units:**
 - medusa-1_tasks.pcap
     - _command:_ `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 1`
     - _attacker:_ 240.0.2.2
@@ -63,11 +75,11 @@ Webpage: http://foofus.net/goons/jmk/medusa/medusa.html
     - _defender:_ 240.125.0.2         
 
             
-### Ncrack 0.5
+### SSH-Ncrack
 
+Version: 0.5
 Webpage: https://nmap.org/ncrack/ 
             
-**Annotated units:**
 - ncrack-paranoid.pcap
     - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T paranoid`
     - _attacker:_ 240.0.3.2
@@ -88,3 +100,10 @@ Webpage: https://nmap.org/ncrack/
     - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T aggressive`
     - _attacker:_ 240.0.3.6
     - _defender:_ 240.125.0.2   
+
+
+## Contribution
+
+New datasets are welcome! The sharing platform is not working yet, but we can prepare network traffic traces now.
+
+*If you are interested in research collaborations, don't hesitate to contact us at  [https://csirt.muni.cz](https://csirt.muni.cz/about-us/contact?lang=en)!*
