@@ -1,0 +1,24 @@
+{
+	"file": "hydra-1_tasks.pcap",
+	"description": "Unsuccessful SSH dictionary attack using hydra tool",
+	"source": [
+		"240.0.1.4"
+	],
+	"destination": [
+		"240.125.0.2"
+	],
+	"intermediate": [],
+	"generated": {
+		"command": "$ ./hydra -l user -x \"1:5:a\" -t 8 ssh://10.0.0.3/",
+		"environment": "Trace-Creator"
+	},
+	"real": null,
+	"tags": [
+		"attack",
+		"SSH",
+		"hydra",
+		"dictionary attack",
+		"brute force",
+		"unsuccessful"
+	]
+}
