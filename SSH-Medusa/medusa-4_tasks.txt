@@ -1,0 +1,24 @@
+{
+	"file": "medusa-4_tasks.pcap",
+	"description": "Unsuccessful SSH dictionary attack using medusa tool",
+	"source": [
+		"240.0.2.3"
+	],
+	"destination": [
+		"240.125.0.2"
+	],
+	"intermediate": [],
+	"generated": {
+		"command": "$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 4",
+		"environment": "Trace-Creator"
+	},
+	"real": null,
+	"tags": [
+		"attack",
+		"SSH",
+		"medusa",
+		"dictionary attack",
+		"brute force",
+		"unsuccessful"
+	]
+}
