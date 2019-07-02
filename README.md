@@ -29,42 +29,33 @@ The following examples contain SSH dictionary attack performed by commonly avail
 
 ### SSH-Hydra
 
-**Common description:**
+#### Common Description:
 
-Webpage: [https://github.com/vanhauser-thc/thc-hydra](https://github.com/vanhauser-thc/thc-hydra)
-Software version: 8.4
+* Webpage: [https://github.com/vanhauser-thc/thc-hydra](https://github.com/vanhauser-thc/thc-hydra)
+* Software version: 8.4
 
-**Examples:**
+#### Annotated Units:
 
-#### [hydra-1_tasks.pcap](./SSH-Hydra/hydra-1_tasks.pcap)
-
-* Command: `$ ./hydra -l user -x "1:5:a" -t 1 ssh://10.0.0.3/`
-* Source address: 240.0.1.2
-* Destination address: 240.125.0.2
-
-#### [hydra-4_tasks.pcap](./SSH-Hydra/hydra-4_tasks.pcap)
-
-* Command: `$ ./hydra -l user -x "1:5:a" -t 4 ssh://10.0.0.3/`
-* Source address: 240.0.1.3
-* Destination address: 240.125.0.2 
-
-#### [hydra-8_tasks.pcap](./SSH-Hydra/hydra-8_tasks.pcap)
-
-* Command: `$ ./hydra -l user -x "1:5:a" -t 8 ssh://10.0.0.3/`
-* Source address: 240.0.1.4
-* Destination address: 240.125.0.2 
-
-#### [hydra-16_tasks.pcap](./SSH-Hydra/hydra-16_tasks.pcap)
-
-* Command: `$ ./hydra -l user -x "1:5:a" -t 16 ssh://10.0.0.3/`
-* Source address: 240.0.1.5
-* Destination address: 240.125.0.2 
-
-#### [hydra-24_tasks.pcap](./SSH-Hydra/hydra-24_tasks.pcap)
-
-* Command: `$ ./hydra -l user -x "1:5:a" -t 24 ssh://10.0.0.3/`
-* Source address: 240.0.1.6
-* Destination address: 240.125.0.2 
+* **[hydra-1_tasks.pcap](./SSH-Hydra/hydra-1_tasks.pcap)**
+   * Command: `$ ./hydra -l user -x "1:5:a" -t 1 ssh://10.0.0.3/`
+   * Source address: 240.0.1.2
+   * Destination address: 240.125.0.2
+* **[hydra-4_tasks.pcap](./SSH-Hydra/hydra-4_tasks.pcap)**
+   * Command: `$ ./hydra -l user -x "1:5:a" -t 4 ssh://10.0.0.3/`
+   * Source address: 240.0.1.3
+   * Destination address: 240.125.0.2 
+* **[hydra-8_tasks.pcap](./SSH-Hydra/hydra-8_tasks.pcap)**
+   * Command: `$ ./hydra -l user -x "1:5:a" -t 8 ssh://10.0.0.3/`
+   * Source address: 240.0.1.4
+   * Destination address: 240.125.0.2 
+* **[hydra-16_tasks.pcap](./SSH-Hydra/hydra-16_tasks.pcap)**
+   * Command: `$ ./hydra -l user -x "1:5:a" -t 16 ssh://10.0.0.3/`
+   * Source address: 240.0.1.5
+   * Destination address: 240.125.0.2 
+* **[hydra-24_tasks.pcap](./SSH-Hydra/hydra-24_tasks.pcap)**
+   * Command: `$ ./hydra -l user -x "1:5:a" -t 24 ssh://10.0.0.3/`
+   * Source address: 240.0.1.6
+   * Destination address: 240.125.0.2 
     
 
 ### SSH-Medusa 
