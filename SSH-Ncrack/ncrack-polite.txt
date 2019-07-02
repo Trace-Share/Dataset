@@ -1,0 +1,24 @@
+{
+	"file": "ncrack-polite.pcap",
+	"description": "Unsuccessful SSH dictionary attack using ncrack tool",
+	"source": [
+		"240.0.3.4"
+	],
+	"destination": [
+		"240.125.0.2"
+	],
+	"intermediate": [],
+	"generated": {
+		"command": "$ ncrack --user user1,user2,user3 10.0.0.3:22 -T polite",
+		"environment": "Trace-Creator"
+	},
+	"real": null,
+	"tags": [
+		"attack",
+		"SSH",
+		"ncrack",
+		"dictionary attack",
+		"brute force",
+		"unsuccessful"
+	]
+}
