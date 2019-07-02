@@ -60,56 +60,64 @@ The following examples contain SSH dictionary attack performed by commonly avail
 
 ### SSH-Medusa 
 
-Version: 2.2
-Webpage: http://foofus.net/goons/jmk/medusa/medusa.html  
+#### Common Description:
 
-- medusa-1_tasks.pcap
-    - _command:_ `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 1`
-    - _attacker:_ 240.0.2.2
-    - _defender:_ 240.125.0.2 
-- medusa-4_tasks.pcap
-    - _command:_ `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 4`
-    - _attacker:_ 240.0.2.3
-    - _defender:_ 240.125.0.2 
-- medusa-8_tasks.pcap
-    - _command:_ `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 8`
-    - _attacker:_ 240.0.2.4
-    - _defender:_ 240.125.0.2 
-- medusa-16_tasks.pcap
-    - _command:_ `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 16`
-    - _attacker:_ 240.0.2.5
-    - _defender:_ 240.125.0.2 
-- medusa-24_tasks.pcap
-    - _command:_ `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 24`
-    - _attacker:_ 240.0.2.6
-    - _defender:_ 240.125.0.2         
+* Webpage: http://foofus.net/goons/jmk/medusa/medusa.html
+* Software version: 2.2
+
+#### Annotated Units:
+
+* **[medusa-1_tasks.pcap](./SSH-Medusa/medusa-1_tasks.pcap)**
+   * Command: `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 1`
+   * Source address: 240.0.2.2
+   * Destination address: 240.125.0.2
+* **[medusa-4_tasks.pcap](./SSH-Medusa/medusa-4_tasks.pcap)**
+   * Command: `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 4`
+   * Source address: 240.0.2.3
+   * Destination address: 240.125.0.2
+* **[medusa-8_tasks.pcap](./SSH-Medusa/medusa-8_tasks.pcap)**
+   * Command: `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 8`
+   * Source address: 240.0.2.4
+   * Destination address: 240.125.0.2
+* **[medusa-16_tasks.pcap](./SSH-Medusa/medusa-16_tasks.pcap)**
+   * Command: `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 16`
+   * Source address: 240.0.2.5
+   * Destination address: 240.125.0.2
+* **[medusa-24_tasks.pcap](./SSH-Medusa/medusa-24_tasks.pcap)** 
+   * Command: `$ medusa -M ssh -u user -P <passwords.txt> -h 10.0.0.3 -t 24`
+   * Source address: 240.0.2.6
+   * Destination address: 240.125.0.2
 
             
 ### SSH-Ncrack
 
-Version: 0.5
-Webpage: https://nmap.org/ncrack/ 
-            
-- ncrack-paranoid.pcap
-    - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T paranoid`
-    - _attacker:_ 240.0.3.2
-    - _defender:_ 240.125.0.2 
-- ncrack-sneaky.pcap
-    - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T sneaky`
-    - _attacker:_ 240.0.3.3
-    - _defender:_ 240.125.0.2 
-- ncrack-polite.pcap
-    - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T polite`
-    - _attacker:_ 240.0.3.4
-    - _defender:_ 240.125.0.2 
-- ncrack-normal.pcap
-    - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T normal`
-    - _attacker:_ 240.0.3.5
-    - _defender:_ 240.125.0.2 
-- ncrack-aggressive.pcap
-    - _command:_ `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T aggressive`
-    - _attacker:_ 240.0.3.6
-    - _defender:_ 240.125.0.2   
+#### Common Description:
+
+* Webpage: https://nmap.org/ncrack/ 
+* Software version: 0.5
+
+#### Annotated Units:
+
+* **[ncrack-paranoid.pcap](./SSH-Ncrack/ncrack-paranoid.pcap)**
+   * Command: `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T paranoid`
+   * Source address: 240.0.3.2
+   * Destination address: 240.125.0.2
+* **[ncrack-sneaky.pcap](./SSH-Ncrack/ncrack-sneaky.pcap)**
+   * Command: `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T sneaky`
+   * Source address: 240.0.3.3
+   * Destination address: 240.125.0.2
+* **[ncrack-polite.pcap](./SSH-Ncrack/ncrack-polite.pcap)**
+   * Command: `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T polite`
+   * Source address: 240.0.3.4
+   * Destination address: 240.125.0.2
+* **[ncrack-normal.pcap](./SSH-Ncrack/ncrack-normal.pcap)**
+   * Command: `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T normal`
+   * Source address: 240.0.3.5
+   * Destination address: 240.125.0.2
+* **[ncrack-aggressive.pcap](./SSH-Ncrack/ncrack-aggressive.pcap)**
+   * Command: `$ ncrack --user user1,user2,user3 10.0.0.3:22 -T aggressive`
+   * Source address: 240.0.3.6
+   * Destination address: 240.125.0.2
 
 
 ## Contribution
